@@ -4,12 +4,37 @@
   "description": "A simple interview exercise for a new Logz.io FED",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "webpack -wd",
+    "test": "jest --watch"
   },
   "author": "Gilly Barr",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "body-parser": "1.17.1",
-    "express": "4.15.2"
+    "css-loader": "^0.28.10",
+    "express": "4.15.2",
+    "isomorphic-fetch": "^2.2.1",
+    "node-sass": "^4.7.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "sass-loader": "^6.0.7",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.20.2",
+    "styled-components": "^3.2.1",
+    "webpack": "3"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
   }
 }
